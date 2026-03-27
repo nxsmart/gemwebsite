@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Environmental Health & Data Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">EH+DS</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="section fade-in">
+        <div class="container hero">
+            <h1 id="name-trigger">Firstname Lastname</h1>
+            <h2 class="subtitle">Environmental Health & Data Science Student</h2>
+            <p class="summary">Translating complex environmental datasets into actionable public health insights. Passionate about sustainability, spatial analysis, and data-driven solutions.</p>
+            
+            <div class="btn-group">
+                <a href="#resume" class="btn btn-primary">View Resume</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <a href="#" class="btn btn-outline" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="now-section">
+                <h3>Right Now</h3>
+                <ul>
+                    <li><strong>Studying:</strong> Biostatistics and Spatial Analysis at UNC</li>
+                    <li><strong>Working on:</strong> A personal environmental risk data tracker</li>
+                    <li><strong>Interested in:</strong> Epidemiology and data visualization</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section fade-in bg-light">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="bio">
+                    <p>I am a student specializing in the intersection of environmental science and computational logic. My academic background focuses on understanding how our environment impacts public health, while my technical training allows me to parse the data necessary to prove it.</p>
+                    <div class="interests">
+                        <h4>Areas of Interest</h4>
+                        <div class="tags">
+                            <span class="tag">Environmental Health</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Sustainability</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h4>Technical Skills</h4>
+                    <ul class="skill-list">
+                        <li><strong>Programming:</strong> R, Python, SQL</li>
+                        <li><strong>Tools:</strong> GIS, Excel, GitHub</li>
+                        <li><strong>Methods:</strong> Statistical Modeling, Data Cleaning, Research Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <div class="project-tags"><span class="tag-sm">Research</span><span class="tag-sm">Data Cleaning</span></div>
+                    <h3>Soil Lead Testing & Accessibility Analysis</h3>
+                    <p><strong>Problem:</strong> Identifying potential disparities in urban soil testing accessibility.</p>
+                    <p><strong>Methods:</strong> Aggregated and cleaned public environmental datasets to map testing locations against demographic data.</p>
+                    <p><strong>Result:</strong> Created a structured case study highlighting gaps in community health resources.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tags"><span class="tag-sm">R</span><span class="tag-sm">Biostatistics</span></div>
+                    <h3>Statistical Analysis of Health Trends</h3>
+                    <p><strong>Problem:</strong> Determining the correlation between specific environmental exposures and health outcomes.</p>
+                    <p><strong>Methods:</strong> Utilized R to run regression models and visualize complex datasets from academic labs.</p>
+                    <p><strong>Result:</strong> Identified statistically significant trends and compiled findings into a comprehensive lab report.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tags"><span class="tag-sm">Epidemiology</span><span class="tag-sm">Case Study</span></div>
+                    <h3>Population-Level Disease Risk Factors</h3>
+                    <p><strong>Problem:</strong> Analyzing the spread and risk factors of localized health anomalies.</p>
+                    <p><strong>Methods:</strong> Applied epidemiological frameworks to assess population data and environmental stressors.</p>
+                    <p><strong>Result:</strong> Developed a structured review of risk factors informing potential policy adjustments.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section fade-in bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Resume</h2>
+            <p>Review my full academic and professional background.</p>
+            <div class="resume-viewer">
+                <object data="resume.pdf" type="application/pdf" width="100%" height="500px">
+                    <p>Your browser does not support PDFs. <a href="resume.pdf">Download the PDF</a>.</p>
+                </object>
+            </div>
+            <a href="resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Firstname Lastname. Built with HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast hidden">Go Heels! 🐏</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
