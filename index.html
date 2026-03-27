@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Environmental Health & Data Science</title>
+  <meta name="description" content="Personal portfolio of an Environmental Health & Data Science student." />
+
+  <!-- Google Fonts: DM Serif Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / initials -->
+      <a href="#home" class="nav-logo" id="nav-logo" title="Click for a surprise">YN</a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" id="nav-links">
+        <a href="#home"     class="nav-link active">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume"   class="nav-link">Resume</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="nav-link nav-external">
+          LinkedIn <span class="ext-arrow">↗</span>
+        </a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home"     class="mobile-link">Home</a>
+      <a href="#about"    class="mobile-link">About</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#resume"   class="mobile-link">Resume</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="mobile-link">LinkedIn ↗</a>
+    </div>
+  </header>
+
+
+  <!-- ===================== HOME ===================== -->
+  <section id="home" class="section section-home">
+
+    <!-- Decorative SVG: topographic contour lines -->
+    <div class="topo-bg" aria-hidden="true">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="var(--accent-light)" stroke-width="1.2" opacity="0.55">
+          <ellipse cx="400" cy="250" rx="380" ry="220"/>
+          <ellipse cx="400" cy="250" rx="320" ry="185"/>
+          <ellipse cx="400" cy="250" rx="260" ry="150"/>
+          <ellipse cx="400" cy="250" rx="200" ry="115"/>
+          <ellipse cx="400" cy="250" rx="140" ry="80"/>
+          <ellipse cx="400" cy="250" rx="80"  ry="45"/>
+          <!-- Offset second cluster -->
+          <ellipse cx="120" cy="80"  rx="140" ry="80"/>
+          <ellipse cx="120" cy="80"  rx="100" ry="55"/>
+          <ellipse cx="120" cy="80"  rx="60"  ry="32"/>
+          <!-- Third cluster -->
+          <ellipse cx="680" cy="420" rx="160" ry="90"/>
+          <ellipse cx="680" cy="420" rx="110" ry="62"/>
+          <ellipse cx="680" cy="420" rx="65"  ry="36"/>
+        </g>
+        <!-- Subtle data-dot nodes -->
+        <g fill="var(--accent)" opacity="0.18">
+          <circle cx="200" cy="140" r="3"/>
+          <circle cx="580" cy="100" r="2.5"/>
+          <circle cx="650" cy="310" r="3.5"/>
+          <circle cx="150" cy="360" r="2"/>
+          <circle cx="400" cy="60"  r="2"/>
+          <circle cx="720" cy="200" r="3"/>
+        </g>
+        <!-- Connector lines between nodes -->
+        <g stroke="var(--accent)" stroke-width="0.8" opacity="0.12">
+          <line x1="200" y1="140" x2="400" y2="60"/>
+          <line x1="400" y1="60"  x2="580" y2="100"/>
+          <line x1="580" y1="100" x2="650" y2="310"/>
+          <line x1="650" y1="310" x2="720" y2="200"/>
+          <line x1="200" y1="140" x2="150" y2="360"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="home-content">
+      <!-- Tag line above name -->
+      <p class="home-eyebrow fade-in">← Portfolio</p>
+
+      <!-- Main name — clicking triggers easter egg -->
+      <h1 class="home-name fade-in" id="home-name">Your Name</h1>
+
+      <p class="home-subtitle fade-in">Environmental Health &amp; Data Science Student</p>
+
+      <p class="home-summary fade-in">
+        I study how data can illuminate the environmental forces that shape human health —
+        combining rigorous analysis with a genuine curiosity for sustainable solutions.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="home-buttons fade-in">
+        <a href="#resume"   class="btn btn-primary">View Resume</a>
+        <a href="#projects" class="btn btn-secondary">View Projects</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="btn btn-ghost">
+          LinkedIn ↗
+        </a>
+      </div>
+
+      <!-- "Right now" section -->
+      <div class="now-card fade-in">
+        <p class="now-label">
+          <!-- Animated pulse dot -->
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Right now
+        </p>
+        <ul class="now-list">
+          <li>
+            <span class="now-icon" aria-hidden="true">📚</span>
+            Completing coursework in Environmental Epidemiology and Biostatistics
+          </li>
+          <li>
+            <span class="now-icon" aria-hidden="true">🔬</span>
+            Conducting undergraduate research on air quality &amp; respiratory outcomes
+          </li>
+          <li>
+            <span class="now-icon" aria-hidden="true">🌱</span>
+            Exploring geospatial analysis tools (R, QGIS) for environmental data
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue fade-in" aria-hidden="true">
+      <span>scroll</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5.5" y="0.5" width="5" height="9" rx="2.5" stroke="currentColor"/>
+        <circle cx="8" cy="4" r="1.5" fill="currentColor">
+          <animateTransform attributeName="transform" type="translate" values="0,0;0,3;0,0" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M4 15l4 5 4-5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section section-about">
+    <div class="section-inner">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">02 — About</span>
+        <h2 class="section-title">A little about me</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Bio block -->
+        <div class="about-bio fade-in">
+          <p>
+            I'm an undergraduate student studying Environmental Health and Data Science,
+            motivated by the intersection of public health, ecology, and quantitative methods.
+            My academic path has taken me through epidemiology, toxicology, and statistical modeling —
+            each course deepening my understanding of how the environment we live in shapes our wellbeing.
+          </p>
+          <p>
+            Outside of coursework, I'm drawn to open data initiatives, science communication,
+            and projects that translate complex datasets into stories that actually matter
+            to communities and policymakers.
+          </p>
+
+          <!-- Areas of interest -->
+          <div class="interest-tags">
+            <span class="tag">Environmental Health</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Sustainability</span>
+            <span class="tag">Public Health</span>
+            <span class="tag">Epidemiology</span>
+            <span class="tag">Geospatial Data</span>
+          </div>
+        </div>
+
+        <!-- Skills block -->
+        <div class="about-skills fade-in">
+
+          <!-- Decorative leaf SVG -->
+          <div class="leaf-deco" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 10 C90 20, 110 50, 100 90 C90 110, 50 115, 30 95 C10 75, 15 40, 40 20 C48 14, 54 10, 60 10Z"
+                    fill="var(--accent-light)" opacity="0.5"/>
+              <path d="M60 10 C60 10, 65 55, 80 90" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+              <path d="M65 40 C72 35, 82 36, 88 42" stroke="var(--accent)" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+              <path d="M68 58 C75 50, 88 50, 93 58" stroke="var(--accent)" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+              <path d="M70 74 C76 66, 88 65, 92 73" stroke="var(--accent)" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+
+          <h3 class="skills-heading">Skills &amp; Tools</h3>
+
+          <div class="skill-group">
+            <p class="skill-group-label">Programming</p>
+            <div class="skill-pills">
+              <span class="skill-pill">R</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-group-label">Data Analysis</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Statistical Modeling</span>
+              <span class="skill-pill">Data Visualization</span>
+              <span class="skill-pill">QGIS</span>
+              <span class="skill-pill">Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-group-label">Research</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Literature Review</span>
+              <span class="skill-pill">Study Design</span>
+              <span class="skill-pill">Technical Writing</span>
+              <span class="skill-pill">ArcGIS</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section section-projects">
+    <div class="section-inner">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-desc">
+          A mix of coursework, independent, and collaborative projects exploring
+          environmental data, health outcomes, and analytical methods.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card fade-in">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" fill="var(--accent-light)" opacity="0.5"/>
+                <path d="M10 28 L16 18 L22 24 L28 14 L34 20" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="card-number">01</span>
+          </div>
+          <h3 class="card-title">Air Quality &amp; Pediatric Asthma Rates in Urban Counties</h3>
+          <p class="card-question">
+            <span class="label">Question:</span>
+            Is there a statistically significant association between annual PM2.5 concentrations
+            and pediatric asthma hospitalizations across urban U.S. counties?
+          </p>
+          <p class="card-methods">
+            <span class="label">Methods &amp; Tools:</span>
+            R (tidyverse, ggplot2), EPA AQS data, CDC BRFSS data, linear regression,
+            choropleth mapping with ggmap
+          </p>
+          <p class="card-result">
+            <span class="label">Key Takeaway:</span>
+            Found a statistically significant positive association (p &lt; 0.01) between PM2.5
+            and hospitalization rates; counties above the NAAQS threshold showed 23% higher
+            asthma admission rates on average.
+          </p>
+          <div class="card-tags">
+            <span class="ctag">R</span>
+            <span class="ctag">Air Quality</span>
+            <span class="ctag">Regression</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card fade-in">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" fill="var(--accent-light)" opacity="0.5"/>
+                <circle cx="20" cy="20" r="5" stroke="var(--accent)" stroke-width="2"/>
+                <path d="M12 12 Q20 6 28 12" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M10 22 Q6 28 12 32"  stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M30 22 Q34 28 28 32"  stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <span class="card-number">02</span>
+          </div>
+          <h3 class="card-title">Lead Exposure Risk Mapping — Baltimore Neighborhoods</h3>
+          <p class="card-question">
+            <span class="label">Question:</span>
+            Which Baltimore neighborhoods face compounded lead exposure risk from
+            both housing age and proximity to industrial sites?
+          </p>
+          <p class="card-methods">
+            <span class="label">Methods &amp; Tools:</span>
+            QGIS, Python (geopandas, folium), Baltimore Open Data Portal,
+            spatial join analysis, composite risk scoring
+          </p>
+          <p class="card-result">
+            <span class="label">Key Takeaway:</span>
+            Identified seven high-priority census tracts where pre-1940 housing stock
+            overlaps within 500m of legacy industrial zones, providing a tiered intervention
+            map for hypothetical public health resource allocation.
+          </p>
+          <div class="card-tags">
+            <span class="ctag">Python</span>
+            <span class="ctag">GIS</span>
+            <span class="ctag">Spatial Analysis</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card fade-in">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" fill="var(--accent-light)" opacity="0.5"/>
+                <rect x="10" y="22" width="4"  height="8" rx="1" fill="var(--accent)" opacity="0.7"/>
+                <rect x="16" y="16" width="4"  height="14" rx="1" fill="var(--accent)" opacity="0.85"/>
+                <rect x="22" y="12" width="4"  height="18" rx="1" fill="var(--accent)"/>
+                <rect x="28" y="18" width="4"  height="12" rx="1" fill="var(--accent)" opacity="0.7"/>
+                <line x1="8" y1="30" x2="34" y2="30" stroke="var(--accent)" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <span class="card-number">03</span>
+          </div>
+          <h3 class="card-title">PFAS Contamination in Public Water Systems — Statistical Overview</h3>
+          <p class="card-question">
+            <span class="label">Question:</span>
+            What patterns exist in PFAS detection across U.S. public water systems,
+            and are rural systems disproportionately under-tested?
+          </p>
+          <p class="card-methods">
+            <span class="label">Methods &amp; Tools:</span>
+            R (dplyr, ggplot2), EPA UCMR 5 dataset, chi-square tests,
+            descriptive statistics, comparative visualization
+          </p>
+          <p class="card-result">
+            <span class="label">Key Takeaway:</span>
+            Analysis revealed that small, rural community water systems were tested
+            at significantly lower rates; among tested systems, PFOA/PFOS co-occurrence
+            was more common in agricultural regions, suggesting runoff as a contributing pathway.
+          </p>
+          <div class="card-tags">
+            <span class="ctag">R</span>
+            <span class="ctag">PFAS</span>
+            <span class="ctag">Public Health</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card fade-in">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" fill="var(--accent-light)" opacity="0.5"/>
+                <circle cx="20" cy="14" r="4"  stroke="var(--accent)" stroke-width="2"/>
+                <circle cx="12" cy="28" r="3"  stroke="var(--accent)" stroke-width="1.8"/>
+                <circle cx="28" cy="28" r="3"  stroke="var(--accent)" stroke-width="1.8"/>
+                <line x1="17" y1="17" x2="14"  y2="25" stroke="var(--accent)" stroke-width="1.5"/>
+                <line x1="23" y1="17" x2="26"  y2="25" stroke="var(--accent)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <span class="card-number">04</span>
+          </div>
+          <h3 class="card-title">Heat Island Vulnerability Index — Course Capstone</h3>
+          <p class="card-question">
+            <span class="label">Question:</span>
+            Can a composite vulnerability index combining land surface temperature,
+            tree canopy coverage, and socioeconomic indicators predict heat-related illness burden?
+          </p>
+          <p class="card-methods">
+            <span class="label">Methods &amp; Tools:</span>
+            NASA Landsat imagery (Google Earth Engine), Census ACS data, R (sf, terra),
+            principal component analysis, index construction
+          </p>
+          <p class="card-result">
+            <span class="label">Key Takeaway:</span>
+            Developed a five-component Heat Vulnerability Index; PCA revealed that tree
+            canopy deficit and impervious surface coverage explained 61% of variance in
+            surface temperature anomalies — suggesting targeted greening as a high-leverage intervention.
+          </p>
+          <div class="card-tags">
+            <span class="ctag">R</span>
+            <span class="ctag">Remote Sensing</span>
+            <span class="ctag">PCA</span>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+
+  <!-- ===================== RESUME ===================== -->
+  <section id="resume" class="section section-resume">
+    <div class="section-inner">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">04 — Resume</span>
+        <h2 class="section-title">Resume</h2>
+        <p class="section-desc">
+          Download or view my resume below. Last updated Spring 2025.
+        </p>
+      </div>
+
+      <!-- Download button -->
+      <div class="resume-actions fade-in">
+        <a href="resume.pdf" download class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="btn btn-secondary">
+          View LinkedIn ↗
+        </a>
+      </div>
+
+      <!-- PDF viewer frame -->
+      <div class="resume-viewer fade-in">
+        <!-- Replace resume.pdf with your actual file name -->
+        <iframe
+          src="resume.pdf"
+          title="Resume PDF"
+          width="100%"
+          height="780"
+          frameborder="0"
+        >
+          <p>
+            Your browser doesn't support embedded PDFs.
+            <a href="resume.pdf" download>Download the PDF</a> instead.
+          </p>
+        </iframe>
+
+        <!-- Placeholder shown when no PDF is present -->
+        <div class="resume-placeholder" id="resume-placeholder" aria-hidden="true">
+          <div class="placeholder-inner">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="4" width="26" height="36" rx="3" stroke="var(--accent)" stroke-width="2"/>
+              <path d="M34 4 L40 10 L34 10 Z" fill="var(--accent-light)" stroke="var(--accent)" stroke-width="1.5"/>
+              <line x1="14" y1="16" x2="30" y2="16" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="14" y1="22" x2="30" y2="22" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="14" y1="28" x2="24" y2="28" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <p>Add <strong>resume.pdf</strong> to your project folder<br/>to display it here.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">Your Name</p>
+      <p class="footer-sub">Environmental Health &amp; Data Science</p>
+      <div class="footer-links">
+        <a href="mailto:you@email.com">Email</a>
+        <span class="dot" aria-hidden="true">·</span>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="dot" aria-hidden="true">·</span>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-copy">Built with care · 2025</p>
+    </div>
+  </footer>
+
+  <!-- Easter egg tooltip -->
+  <div class="easter-tooltip" id="easter-tooltip" role="alert" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
